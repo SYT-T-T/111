@@ -1,0 +1,926 @@
+(mgbod) PS E:\latex\rjhtext\IGAN-main\IGAN-main> python main.py --data_dir thyroid   
+=============================== IGAN ====================================== 
+Computation device: cuda
+experiment settings
+Optimizer: adam
+Epochs: [100]
+Batch size: [32]
+Latent dimension: [4]
+Learning rate of discriminator: [0.0001]
+Learning rate of genertor: [0.0001]
+######################## the 1-th repeat ########################
+加载预处理数据: thyroid
+正常数据: 3679
+异常数据: 93
+============ data set ================
+train data: (3586, 6)
+test data: (186, 6)
+============ data set ================
+[IGAN-train] train shape: (3586, 6)
+[IGAN-train] train mean: [ 2.0662667e-06  9.0932821e-07  1.7101775e-05  6.3864231e-06
+ -7.5033872e-06  3.9074616e-06]
+[IGAN-train] train std: [0.99999523 0.9999105  0.9999776  0.9999879  0.99999017 0.9999749 ]
+Start train ===================================
+Epoch[1]         loss: 0.6438    g_loss: 0.2942  d_loss: 0.3496 :   0%| | 0/100 [00:00<?, ?it
+Epoch[1] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [3.08]%
+Test set AUPRC: [31.08%]
+[IGAN] Epoch 1: D_real mean=0.4454, std=0.0003 | D_fake mean=0.4457, std=0.0000      
+Epoch[1]         loss: 0.6438    g_loss: 0.2942  d_loss: 0.3496 :   1%| | 1/100 [00:0Epoch[2]         loss: 0.6450    g_loss: 0.2956  d_loss: 0.3493 :   1%| | 1/100 [00:01<01:13,
+Epoch[2] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [3.53]%
+Test set AUPRC: [31.13%]
+[IGAN] Epoch 2: D_real mean=0.4469, std=0.0004 | D_fake mean=0.4468, std=0.0002      
+Epoch[2]         loss: 0.6450    g_loss: 0.2956  d_loss: 0.3493 :   2%| | 2/100 [00:0Epoch[3]         loss: 0.6465    g_loss: 0.2973  d_loss: 0.3492 :   2%| | 2/100 [00:01<01:04,
+Epoch[3] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.29]%
+Test set AUPRC: [94.08%]
+[IGAN] Epoch 3: D_real mean=0.4488, std=0.0002 | D_fake mean=0.4497, std=0.0000      
+Epoch[3]         loss: 0.6465    g_loss: 0.2973  d_loss: 0.3492 :   3%| | 3/100 [00:0Epoch[4]         loss: 0.6477    g_loss: 0.2992  d_loss: 0.3485 :   3%| | 3/100 [00:02<00:58,
+Epoch[4] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.27]%
+Test set AUPRC: [95.15%]
+[IGAN] Epoch 4: D_real mean=0.4496, std=0.0004 | D_fake mean=0.4505, std=0.0002
+Epoch[4]         loss: 0.6477    g_loss: 0.2992  d_loss: 0.3485 :   4%| | 4/100 [00:0Epoch[5]         loss: 0.6485    g_loss: 0.2995  d_loss: 0.3490 :   4%| | 4/100 [00:03<00:56,
+Epoch[5] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.51]%
+Test set AUPRC: [95.39%]
+[IGAN] Epoch 5: D_real mean=0.4513, std=0.0004 | D_fake mean=0.4514, std=0.0001      
+Epoch[5]         loss: 0.6485    g_loss: 0.2995  d_loss: 0.3490 :   5%| | 5/100 [00:0Epoch[6]         loss: 0.6501    g_loss: 0.3013  d_loss: 0.3488 :   5%| | 5/100 [00:03<00:55,
+Epoch[6] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [92.30]%
+Test set AUPRC: [93.17%]
+[IGAN] Epoch 6: D_real mean=0.4535, std=0.0004 | D_fake mean=0.4532, std=0.0000      
+Epoch[6]         loss: 0.6501    g_loss: 0.3013  d_loss: 0.3488 :   6%| | 6/100 [00:0Epoch[7]         loss: 0.6514    g_loss: 0.3025  d_loss: 0.3488 :   6%| | 6/100 [00:04<00:52,
+Epoch[7] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.27]%
+Test set AUPRC: [95.15%]
+[IGAN] Epoch 7: D_real mean=0.4549, std=0.0003 | D_fake mean=0.4548, std=0.0000      
+Epoch[7]         loss: 0.6514    g_loss: 0.3025  d_loss: 0.3488 :   7%| | 7/100 [00:0Epoch[8]         loss: 0.6526    g_loss: 0.3040  d_loss: 0.3486 :   7%| | 7/100 [00:04<00:50,
+Epoch[8] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [88.25]%
+Test set AUPRC: [91.67%]
+[IGAN] Epoch 8: D_real mean=0.4562, std=0.0003 | D_fake mean=0.4564, std=0.0000      
+Epoch[8]         loss: 0.6526    g_loss: 0.3040  d_loss: 0.3486 :   8%| | 8/100 [00:0Epoch[9]         loss: 0.6538    g_loss: 0.3056  d_loss: 0.3483 :   8%| | 8/100 [00:05<00:50,
+Epoch[9] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [97.49]%
+Test set AUPRC: [96.69%]
+[IGAN] Epoch 9: D_real mean=0.4576, std=0.0004 | D_fake mean=0.4580, std=0.0000      
+Epoch[9]         loss: 0.6538    g_loss: 0.3056  d_loss: 0.3483 :   9%| | 9/100 [00:0Epoch[10]        loss: 0.6548    g_loss: 0.3068  d_loss: 0.3480 :   9%| | 9/100 [00:05<00:50
+Epoch[10] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [59.59]%
+Test set AUPRC: [62.24%]
+[IGAN] Epoch 10: D_real mean=0.4583, std=0.0007 | D_fake mean=0.4592, std=0.0000
+Epoch[10]        loss: 0.6548    g_loss: 0.3068  d_loss: 0.3480 :  10%| | 10/100 [00:Epoch[11]        loss: 0.6555    g_loss: 0.3079  d_loss: 0.3477 :  10%| | 10/100 [00:06<00:5
+Epoch[11] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [8.32]%
+Test set AUPRC: [34.79%]
+[IGAN] Epoch 11: D_real mean=0.4584, std=0.0010 | D_fake mean=0.4603, std=0.0000     
+Epoch[11]        loss: 0.6555    g_loss: 0.3079  d_loss: 0.3477 :  11%| | 11/100 [00:Epoch[12]        loss: 0.6559    g_loss: 0.3089  d_loss: 0.3470 :  11%| | 11/100 [00:06<00:5
+Epoch[12] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [2.81]%
+Test set AUPRC: [31.02%]
+[IGAN] Epoch 12: D_real mean=0.4581, std=0.0016 | D_fake mean=0.4613, std=0.0006     
+Epoch[12]        loss: 0.6559    g_loss: 0.3089  d_loss: 0.3470 :  12%| | 12/100 [00:Epoch[13]        loss: 0.6550    g_loss: 0.3051  d_loss: 0.3498 :  12%| | 12/100 [00:07<00:5
+Epoch[13] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [3.35]%
+Test set AUPRC: [31.11%]
+[IGAN] Epoch 13: D_real mean=0.4613, std=0.0011 | D_fake mean=0.4575, std=0.0010
+Epoch[13]        loss: 0.6550    g_loss: 0.3051  d_loss: 0.3498 :  13%|▏| 13/100 [00:Epoch[14]        loss: 0.6608    g_loss: 0.3152  d_loss: 0.3456 :  13%|▏| 13/100 [00:08<00:5
+Epoch[14] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.83]%
+Test set AUPRC: [95.79%]
+[IGAN] Epoch 14: D_real mean=0.4640, std=0.0008 | D_fake mean=0.4661, std=0.0009     
+Epoch[14]        loss: 0.6608    g_loss: 0.3152  d_loss: 0.3456 :  14%|▏| 14/100 [00:Epoch[15]        loss: 0.6604    g_loss: 0.3127  d_loss: 0.3477 :  14%|▏| 14/100 [00:08<00:5
+Epoch[15] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.79]%
+Test set AUPRC: [95.78%]
+[IGAN] Epoch 15: D_real mean=0.4658, std=0.0007 | D_fake mean=0.4653, std=0.0002     
+Epoch[15]        loss: 0.6604    g_loss: 0.3127  d_loss: 0.3477 :  15%|▏| 15/100 [00:Epoch[16]        loss: 0.6618    g_loss: 0.3140  d_loss: 0.3478 :  15%|▏| 15/100 [00:09<00:4
+Epoch[16] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [94.57]%
+Test set AUPRC: [94.46%]
+[IGAN] Epoch 16: D_real mean=0.4671, std=0.0004 | D_fake mean=0.4670, std=0.0001     
+Epoch[16]        loss: 0.6618    g_loss: 0.3140  d_loss: 0.3478 :  16%|▏| 16/100 [00:Epoch[17]        loss: 0.6629    g_loss: 0.3151  d_loss: 0.3478 :  16%|▏| 16/100 [00:09<00:4
+Epoch[17] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.99]%
+Test set AUPRC: [95.96%]
+[IGAN] Epoch 17: D_real mean=0.4687, std=0.0005 | D_fake mean=0.4681, std=0.0001     
+Epoch[17]        loss: 0.6629    g_loss: 0.3151  d_loss: 0.3478 :  17%|▏| 17/100 [00:Epoch[18]        loss: 0.6641    g_loss: 0.3163  d_loss: 0.3478 :  17%|▏| 17/100 [00:10<00:4
+Epoch[18] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.35]%
+Test set AUPRC: [94.87%]
+[IGAN] Epoch 18: D_real mean=0.4701, std=0.0004 | D_fake mean=0.4694, std=0.0001     
+Epoch[18]        loss: 0.6641    g_loss: 0.3163  d_loss: 0.3478 :  18%|▏| 18/100 [00:Epoch[19]        loss: 0.6652    g_loss: 0.3175  d_loss: 0.3477 :  18%|▏| 18/100 [00:10<00:4
+Epoch[19] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.21]%
+Test set AUPRC: [95.52%]
+[IGAN] Epoch 19: D_real mean=0.4712, std=0.0004 | D_fake mean=0.4707, std=0.0001     
+Epoch[19]        loss: 0.6652    g_loss: 0.3175  d_loss: 0.3477 :  19%|▏| 19/100 [00:Epoch[20]        loss: 0.6664    g_loss: 0.3189  d_loss: 0.3475 :  19%|▏| 19/100 [00:11<00:4
+Epoch[20] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [97.24]%
+Test set AUPRC: [96.31%]
+[IGAN] Epoch 20: D_real mean=0.4726, std=0.0004 | D_fake mean=0.4724, std=0.0000     
+Epoch[20]        loss: 0.6664    g_loss: 0.3189  d_loss: 0.3475 :  20%|▏| 20/100 [00:Epoch[21]        loss: 0.6676    g_loss: 0.3203  d_loss: 0.3474 :  20%|▏| 20/100 [00:11<00:4
+Epoch[21] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [97.19]%
+Test set AUPRC: [96.21%]
+[IGAN] Epoch 21: D_real mean=0.4738, std=0.0003 | D_fake mean=0.4736, std=0.0001     
+Epoch[21]        loss: 0.6676    g_loss: 0.3203  d_loss: 0.3474 :  21%|▏| 21/100 [00:Epoch[22]        loss: 0.6688    g_loss: 0.3216  d_loss: 0.3472 :  21%|▏| 21/100 [00:12<00:4
+Epoch[22] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [89.31]%
+Test set AUPRC: [92.15%]
+[IGAN] Epoch 22: D_real mean=0.4750, std=0.0003 | D_fake mean=0.4751, std=0.0000     
+Epoch[22]        loss: 0.6688    g_loss: 0.3216  d_loss: 0.3472 :  22%|▏| 22/100 [00:Epoch[23]        loss: 0.6699    g_loss: 0.3229  d_loss: 0.3470 :  22%|▏| 22/100 [00:12<00:4
+Epoch[23] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [9.47]%
+Test set AUPRC: [37.44%]
+[IGAN] Epoch 23: D_real mean=0.4757, std=0.0004 | D_fake mean=0.4761, std=0.0001     
+Epoch[23]        loss: 0.6699    g_loss: 0.3229  d_loss: 0.3470 :  23%|▏| 23/100 [00:Epoch[24]        loss: 0.6706    g_loss: 0.3239  d_loss: 0.3468 :  23%|▏| 23/100 [00:13<00:4
+Epoch[24] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [53.05]%
+Test set AUPRC: [68.30%]
+[IGAN] Epoch 24: D_real mean=0.4765, std=0.0006 | D_fake mean=0.4774, std=0.0004     
+Epoch[24]        loss: 0.6706    g_loss: 0.3239  d_loss: 0.3468 :  24%|▏| 24/100 [00:Epoch[25]        loss: 0.6724    g_loss: 0.3258  d_loss: 0.3466 :  24%|▏| 24/100 [00:14<00:4
+Epoch[25] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [97.27]%
+Test set AUPRC: [96.33%]
+[IGAN] Epoch 25: D_real mean=0.4790, std=0.0009 | D_fake mean=0.4803, std=0.0008     
+Epoch[25]        loss: 0.6724    g_loss: 0.3258  d_loss: 0.3466 :  25%|▎| 25/100 [00:Epoch[26]        loss: 0.6739    g_loss: 0.3269  d_loss: 0.3470 :  25%|▎| 25/100 [00:14<00:4
+Epoch[26] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [97.12]%
+Test set AUPRC: [96.16%]
+[IGAN] Epoch 26: D_real mean=0.4810, std=0.0010 | D_fake mean=0.4796, std=0.0003     
+Epoch[26]        loss: 0.6739    g_loss: 0.3269  d_loss: 0.3470 :  26%|▎| 26/100 [00:Epoch[27]        loss: 0.6746    g_loss: 0.3273  d_loss: 0.3473 :  26%|▎| 26/100 [00:15<00:4
+Epoch[27] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [94.85]%
+Test set AUPRC: [94.01%]
+[IGAN] Epoch 27: D_real mean=0.4814, std=0.0008 | D_fake mean=0.4807, std=0.0001     
+Epoch[27]        loss: 0.6746    g_loss: 0.3273  d_loss: 0.3473 :  27%|▎| 27/100 [00:Epoch[28]        loss: 0.6752    g_loss: 0.3280  d_loss: 0.3472 :  27%|▎| 27/100 [00:15<00:4
+Epoch[28] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.83]%
+Test set AUPRC: [95.73%]
+[IGAN] Epoch 28: D_real mean=0.4818, std=0.0007 | D_fake mean=0.4818, std=0.0001     
+Epoch[28]        loss: 0.6752    g_loss: 0.3280  d_loss: 0.3472 :  28%|▎| 28/100 [00:Epoch[29]        loss: 0.6760    g_loss: 0.3292  d_loss: 0.3468 :  28%|▎| 28/100 [00:16<00:3
+Epoch[29] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [5.21]%
+Test set AUPRC: [31.25%]
+[IGAN] Epoch 29: D_real mean=0.4822, std=0.0009 | D_fake mean=0.4827, std=0.0002
+Epoch[29]        loss: 0.6760    g_loss: 0.3292  d_loss: 0.3468 :  29%|▎| 29/100 [00:Epoch[30]        loss: 0.6762    g_loss: 0.3291  d_loss: 0.3471 :  29%|▎| 29/100 [00:17<00:3
+Epoch[30] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.97]%
+Test set AUPRC: [95.92%]
+[IGAN] Epoch 30: D_real mean=0.4833, std=0.0005 | D_fake mean=0.4831, std=0.0007     
+Epoch[30]        loss: 0.6762    g_loss: 0.3291  d_loss: 0.3471 :  30%|▎| 30/100 [00:Epoch[31]        loss: 0.6775    g_loss: 0.3306  d_loss: 0.3469 :  30%|▎| 30/100 [00:17<00:4
+Epoch[31] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.73]%
+Test set AUPRC: [95.20%]
+[IGAN] Epoch 31: D_real mean=0.4843, std=0.0005 | D_fake mean=0.4845, std=0.0001     
+Epoch[31]        loss: 0.6775    g_loss: 0.3306  d_loss: 0.3469 :  31%|▎| 31/100 [00:Epoch[32]        loss: 0.6786    g_loss: 0.3320  d_loss: 0.3467 :  31%|▎| 31/100 [00:18<00:4
+Epoch[32] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.65]%
+Test set AUPRC: [95.15%]
+[IGAN] Epoch 32: D_real mean=0.4852, std=0.0008 | D_fake mean=0.4851, std=0.0000     
+Epoch[32]        loss: 0.6786    g_loss: 0.3320  d_loss: 0.3467 :  32%|▎| 32/100 [00:Epoch[33]        loss: 0.6790    g_loss: 0.3324  d_loss: 0.3466 :  32%|▎| 32/100 [00:18<00:3
+Epoch[33] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [4.67]%
+Test set AUPRC: [31.25%]
+[IGAN] Epoch 33: D_real mean=0.4853, std=0.0007 | D_fake mean=0.4862, std=0.0000     
+Epoch[33]        loss: 0.6790    g_loss: 0.3324  d_loss: 0.3466 :  33%|▎| 33/100 [00:Epoch[34]        loss: 0.6794    g_loss: 0.3335  d_loss: 0.3459 :  33%|▎| 33/100 [00:19<00:3
+Epoch[34] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [3.28]%
+Test set AUPRC: [31.12%]
+[IGAN] Epoch 34: D_real mean=0.4848, std=0.0010 | D_fake mean=0.4871, std=0.0003     
+Epoch[34]        loss: 0.6794    g_loss: 0.3335  d_loss: 0.3459 :  34%|▎| 34/100 [00:Epoch[35]        loss: 0.6793    g_loss: 0.3326  d_loss: 0.3467 :  34%|▎| 34/100 [00:19<00:3
+Epoch[35] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.88]%
+Test set AUPRC: [95.81%]
+[IGAN] Epoch 35: D_real mean=0.4858, std=0.0010 | D_fake mean=0.4860, std=0.0003
+Epoch[35]        loss: 0.6793    g_loss: 0.3326  d_loss: 0.3467 :  35%|▎| 35/100 [00:Epoch[36]        loss: 0.6799    g_loss: 0.3331  d_loss: 0.3468 :  35%|▎| 35/100 [00:20<00:3
+Epoch[36] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.92]%
+Test set AUPRC: [95.90%]
+[IGAN] Epoch 36: D_real mean=0.4869, std=0.0010 | D_fake mean=0.4877, std=0.0001     
+Epoch[36]        loss: 0.6799    g_loss: 0.3331  d_loss: 0.3468 :  36%|▎| 36/100 [00:Epoch[37]        loss: 0.6824    g_loss: 0.3368  d_loss: 0.3456 :  36%|▎| 36/100 [00:20<00:3
+Epoch[37] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [82.65]%
+Test set AUPRC: [85.23%]
+[IGAN] Epoch 37: D_real mean=0.4888, std=0.0016 | D_fake mean=0.4917, std=0.0001     
+Epoch[37]        loss: 0.6824    g_loss: 0.3368  d_loss: 0.3456 :  37%|▎| 37/100 [00:Epoch[38]        loss: 0.6839    g_loss: 0.3392  d_loss: 0.3448 :  37%|▎| 37/100 [00:21<00:3
+Epoch[38] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [2.81]%
+Test set AUPRC: [31.04%]
+[IGAN] Epoch 38: D_real mean=0.4891, std=0.0028 | D_fake mean=0.4930, std=0.0005     
+Epoch[38]        loss: 0.6839    g_loss: 0.3392  d_loss: 0.3448 :  38%|▍| 38/100 [00:Epoch[39]        loss: 0.6889    g_loss: 0.3454  d_loss: 0.3435 :  38%|▍| 38/100 [00:22<00:3
+Epoch[39] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [97.32]%
+Test set AUPRC: [96.37%]
+[IGAN] Epoch 39: D_real mean=0.4959, std=0.0084 | D_fake mean=0.5223, std=0.0051     
+Epoch[39]        loss: 0.6889    g_loss: 0.3454  d_loss: 0.3435 :  39%|▍| 39/100 [00:Epoch[40]        loss: 0.7008    g_loss: 0.3588  d_loss: 0.3420 :  39%|▍| 39/100 [00:22<00:3
+Epoch[40] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [2.77]%
+Test set AUPRC: [31.03%]
+[IGAN] Epoch 40: D_real mean=0.5113, std=0.0267 | D_fake mean=0.4914, std=0.0029     
+Epoch[40]        loss: 0.7008    g_loss: 0.3588  d_loss: 0.3420 :  40%|▍| 40/100 [00:Epoch[41]        loss: 0.6864    g_loss: 0.3341  d_loss: 0.3523 :  40%|▍| 40/100 [00:23<00:3
+Epoch[41] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [97.13]%
+Test set AUPRC: [96.13%]
+[IGAN] Epoch 41: D_real mean=0.4919, std=0.0072 | D_fake mean=0.4885, std=0.0002     
+Epoch[41]        loss: 0.6864    g_loss: 0.3341  d_loss: 0.3523 :  41%|▍| 41/100 [00:Epoch[42]        loss: 0.6836    g_loss: 0.3360  d_loss: 0.3476 :  41%|▍| 41/100 [00:23<00:3
+Epoch[42] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [81.81]%
+Test set AUPRC: [85.98%]
+[IGAN] Epoch 42: D_real mean=0.4908, std=0.0023 | D_fake mean=0.4894, std=0.0002
+Epoch[42]        loss: 0.6836    g_loss: 0.3360  d_loss: 0.3476 :  42%|▍| 42/100 [00:Epoch[43]        loss: 0.6841    g_loss: 0.3371  d_loss: 0.3470 :  42%|▍| 42/100 [00:24<00:3
+Epoch[43] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [97.11]%
+Test set AUPRC: [96.11%]
+[IGAN] Epoch 43: D_real mean=0.4918, std=0.0021 | D_fake mean=0.4908, std=0.0002
+Epoch[43]        loss: 0.6841    g_loss: 0.3371  d_loss: 0.3470 :  43%|▍| 43/100 [00:Epoch[44]        loss: 0.6849    g_loss: 0.3375  d_loss: 0.3474 :  43%|▍| 43/100 [00:24<00:3
+Epoch[44] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.76]%
+Test set AUPRC: [95.82%]
+[IGAN] Epoch 44: D_real mean=0.4928, std=0.0014 | D_fake mean=0.4912, std=0.0003
+Epoch[44]        loss: 0.6849    g_loss: 0.3375  d_loss: 0.3474 :  44%|▍| 44/100 [00:Epoch[45]        loss: 0.6856    g_loss: 0.3382  d_loss: 0.3474 :  44%|▍| 44/100 [00:25<00:3
+Epoch[45] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.84]%
+Test set AUPRC: [95.86%]
+[IGAN] Epoch 45: D_real mean=0.4935, std=0.0013 | D_fake mean=0.4920, std=0.0001     
+Epoch[45]        loss: 0.6856    g_loss: 0.3382  d_loss: 0.3474 :  45%|▍| 45/100 [00:Epoch[46]        loss: 0.6861    g_loss: 0.3389  d_loss: 0.3472 :  45%|▍| 45/100 [00:26<00:3
+Epoch[46] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.32]%
+Test set AUPRC: [95.45%]
+[IGAN] Epoch 46: D_real mean=0.4933, std=0.0009 | D_fake mean=0.4922, std=0.0001
+Epoch[46]        loss: 0.6861    g_loss: 0.3389  d_loss: 0.3472 :  46%|▍| 46/100 [00:Epoch[47]        loss: 0.6860    g_loss: 0.3390  d_loss: 0.3470 :  46%|▍| 46/100 [00:26<00:3
+Epoch[47] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.24]%
+Test set AUPRC: [94.76%]
+[IGAN] Epoch 47: D_real mean=0.4932, std=0.0008 | D_fake mean=0.4924, std=0.0001     
+Epoch[47]        loss: 0.6860    g_loss: 0.3390  d_loss: 0.3470 :  47%|▍| 47/100 [00:Epoch[48]        loss: 0.6860    g_loss: 0.3391  d_loss: 0.3469 :  47%|▍| 47/100 [00:27<00:3
+Epoch[48] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [93.71]%
+Test set AUPRC: [93.82%]
+[IGAN] Epoch 48: D_real mean=0.4929, std=0.0007 | D_fake mean=0.4926, std=0.0001     
+Epoch[48]        loss: 0.6860    g_loss: 0.3391  d_loss: 0.3469 :  48%|▍| 48/100 [00:Epoch[49]        loss: 0.6861    g_loss: 0.3394  d_loss: 0.3467 :  48%|▍| 48/100 [00:27<00:3
+Epoch[49] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [92.71]%
+Test set AUPRC: [93.15%]
+[IGAN] Epoch 49: D_real mean=0.4929, std=0.0006 | D_fake mean=0.4930, std=0.0005     
+Epoch[49]        loss: 0.6861    g_loss: 0.3394  d_loss: 0.3467 :  49%|▍| 49/100 [00:Epoch[50]        loss: 0.6863    g_loss: 0.3396  d_loss: 0.3466 :  49%|▍| 49/100 [00:28<00:3
+Epoch[50] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.13]%
+Test set AUPRC: [95.20%]
+[IGAN] Epoch 50: D_real mean=0.4929, std=0.0006 | D_fake mean=0.4928, std=0.0000
+Epoch[50]        loss: 0.6863    g_loss: 0.3396  d_loss: 0.3466 :  50%|▌| 50/100 [00:Epoch[51]        loss: 0.6861    g_loss: 0.3393  d_loss: 0.3468 :  50%|▌| 50/100 [00:28<00:2
+Epoch[51] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [67.48]%
+Test set AUPRC: [77.12%]
+[IGAN] Epoch 51: D_real mean=0.4930, std=0.0007 | D_fake mean=0.4926, std=0.0000     
+Epoch[51]        loss: 0.6861    g_loss: 0.3393  d_loss: 0.3468 :  51%|▌| 51/100 [00:Epoch[52]        loss: 0.6861    g_loss: 0.3392  d_loss: 0.3470 :  51%|▌| 51/100 [00:29<00:2
+Epoch[52] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [3.86]%
+Test set AUPRC: [31.09%]
+[IGAN] Epoch 52: D_real mean=0.4935, std=0.0007 | D_fake mean=0.4929, std=0.0001     
+Epoch[52]        loss: 0.6861    g_loss: 0.3392  d_loss: 0.3470 :  52%|▌| 52/100 [00:Epoch[53]        loss: 0.6875    g_loss: 0.3410  d_loss: 0.3465 :  52%|▌| 52/100 [00:30<00:2
+Epoch[53] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.84]%
+Test set AUPRC: [95.01%]
+[IGAN] Epoch 53: D_real mean=0.4949, std=0.0005 | D_fake mean=0.4952, std=0.0001     
+Epoch[53]        loss: 0.6875    g_loss: 0.3410  d_loss: 0.3465 :  53%|▌| 53/100 [00:Epoch[54]        loss: 0.6884    g_loss: 0.3419  d_loss: 0.3466 :  53%|▌| 53/100 [00:30<00:2
+Epoch[54] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.07]%
+Test set AUPRC: [95.26%]
+[IGAN] Epoch 54: D_real mean=0.4955, std=0.0008 | D_fake mean=0.4954, std=0.0001     
+Epoch[54]        loss: 0.6884    g_loss: 0.3419  d_loss: 0.3466 :  54%|▌| 54/100 [00:Epoch[55]        loss: 0.6886    g_loss: 0.3421  d_loss: 0.3465 :  54%|▌| 54/100 [00:31<00:2
+Epoch[55] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.25]%
+Test set AUPRC: [95.41%]
+[IGAN] Epoch 55: D_real mean=0.4955, std=0.0007 | D_fake mean=0.4954, std=0.0000     
+Epoch[55]        loss: 0.6886    g_loss: 0.3421  d_loss: 0.3465 :  55%|▌| 55/100 [00:Epoch[56]        loss: 0.6884    g_loss: 0.3418  d_loss: 0.3466 :  55%|▌| 55/100 [00:31<00:2
+Epoch[56] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [17.23]%
+Test set AUPRC: [34.70%]
+[IGAN] Epoch 56: D_real mean=0.4950, std=0.0011 | D_fake mean=0.4949, std=0.0000     
+Epoch[56]        loss: 0.6884    g_loss: 0.3418  d_loss: 0.3466 :  56%|▌| 56/100 [00:Epoch[57]        loss: 0.6899    g_loss: 0.3435  d_loss: 0.3464 :  56%|▌| 56/100 [00:32<00:2
+Epoch[57] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.94]%
+Test set AUPRC: [95.33%]
+[IGAN] Epoch 57: D_real mean=0.4982, std=0.0009 | D_fake mean=0.4985, std=0.0005     
+Epoch[57]        loss: 0.6899    g_loss: 0.3435  d_loss: 0.3464 :  57%|▌| 57/100 [00:Epoch[58]        loss: 0.6912    g_loss: 0.3443  d_loss: 0.3469 :  57%|▌| 57/100 [00:32<00:2
+Epoch[58] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [63.51]%
+Test set AUPRC: [76.21%]
+[IGAN] Epoch 58: D_real mean=0.4979, std=0.0010 | D_fake mean=0.4974, std=0.0000     
+Epoch[58]        loss: 0.6912    g_loss: 0.3443  d_loss: 0.3469 :  58%|▌| 58/100 [00:Epoch[59]        loss: 0.6907    g_loss: 0.3439  d_loss: 0.3468 :  58%|▌| 58/100 [00:33<00:2
+Epoch[59] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [92.68]%
+Test set AUPRC: [93.52%]
+[IGAN] Epoch 59: D_real mean=0.4977, std=0.0007 | D_fake mean=0.4974, std=0.0000     
+Epoch[59]        loss: 0.6907    g_loss: 0.3439  d_loss: 0.3468 :  59%|▌| 59/100 [00:Epoch[60]        loss: 0.6908    g_loss: 0.3443  d_loss: 0.3466 :  59%|▌| 59/100 [00:34<00:2
+Epoch[60] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.55]%
+Test set AUPRC: [94.86%]
+[IGAN] Epoch 60: D_real mean=0.4975, std=0.0010 | D_fake mean=0.4979, std=0.0001
+Epoch[60]        loss: 0.6908    g_loss: 0.3443  d_loss: 0.3466 :  60%|▌| 60/100 [00:Epoch[61]        loss: 0.6911    g_loss: 0.3448  d_loss: 0.3463 :  60%|▌| 60/100 [00:34<00:2
+Epoch[61] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [87.28]%
+Test set AUPRC: [89.80%]
+[IGAN] Epoch 61: D_real mean=0.4978, std=0.0010 | D_fake mean=0.4986, std=0.0000
+Epoch[61]        loss: 0.6911    g_loss: 0.3448  d_loss: 0.3463 :  61%|▌| 61/100 [00:Epoch[62]        loss: 0.6920    g_loss: 0.3460  d_loss: 0.3460 :  61%|▌| 61/100 [00:35<00:2
+Epoch[62] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [69.72]%
+Test set AUPRC: [78.51%]
+[IGAN] Epoch 62: D_real mean=0.4987, std=0.0015 | D_fake mean=0.5003, std=0.0001
+Epoch[62]        loss: 0.6920    g_loss: 0.3460  d_loss: 0.3460 :  62%|▌| 62/100 [00:Epoch[63]        loss: 0.6943    g_loss: 0.3491  d_loss: 0.3452 :  62%|▌| 62/100 [00:35<00:2
+Epoch[63] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [27.48]%
+Test set AUPRC: [52.71%]
+[IGAN] Epoch 63: D_real mean=0.5008, std=0.0026 | D_fake mean=0.5045, std=0.0002
+Epoch[63]        loss: 0.6943    g_loss: 0.3491  d_loss: 0.3452 :  63%|▋| 63/100 [00:Epoch[64]        loss: 0.6962    g_loss: 0.3498  d_loss: 0.3464 :  63%|▋| 63/100 [00:36<00:2
+Epoch[64] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [15.52]%
+Test set AUPRC: [38.94%]
+[IGAN] Epoch 64: D_real mean=0.5037, std=0.0035 | D_fake mean=0.5001, std=0.0007     
+Epoch[64]        loss: 0.6962    g_loss: 0.3498  d_loss: 0.3464 :  64%|▋| 64/100 [00:Epoch[65]        loss: 0.6975    g_loss: 0.3502  d_loss: 0.3473 :  64%|▋| 64/100 [00:37<00:2
+Epoch[65] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.69]%
+Test set AUPRC: [95.70%]
+[IGAN] Epoch 65: D_real mean=0.5055, std=0.0031 | D_fake mean=0.5051, std=0.0011     
+Epoch[65]        loss: 0.6975    g_loss: 0.3502  d_loss: 0.3473 :  65%|▋| 65/100 [00:Epoch[66]        loss: 0.6969    g_loss: 0.3492  d_loss: 0.3476 :  65%|▋| 65/100 [00:37<00:2
+Epoch[66] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.69]%
+Test set AUPRC: [95.74%]
+[IGAN] Epoch 66: D_real mean=0.5034, std=0.0020 | D_fake mean=0.5013, std=0.0003     
+Epoch[66]        loss: 0.6969    g_loss: 0.3492  d_loss: 0.3476 :  66%|▋| 66/100 [00:Epoch[67]        loss: 0.6942    g_loss: 0.3470  d_loss: 0.3473 :  66%|▋| 66/100 [00:38<00:1
+Epoch[67] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.59]%
+Test set AUPRC: [95.68%]
+[IGAN] Epoch 67: D_real mean=0.5007, std=0.0012 | D_fake mean=0.4997, std=0.0001     
+Epoch[67]        loss: 0.6942    g_loss: 0.3470  d_loss: 0.3473 :  67%|▋| 67/100 [00:Epoch[68]        loss: 0.6927    g_loss: 0.3458  d_loss: 0.3469 :  67%|▋| 67/100 [00:38<00:1
+Epoch[68] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.06]%
+Test set AUPRC: [95.44%]
+[IGAN] Epoch 68: D_real mean=0.4992, std=0.0007 | D_fake mean=0.4989, std=0.0001     
+Epoch[68]        loss: 0.6927    g_loss: 0.3458  d_loss: 0.3469 :  68%|▋| 68/100 [00:Epoch[69]        loss: 0.6919    g_loss: 0.3453  d_loss: 0.3467 :  68%|▋| 68/100 [00:39<00:1
+Epoch[69] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.15]%
+Test set AUPRC: [95.47%]
+[IGAN] Epoch 69: D_real mean=0.4985, std=0.0009 | D_fake mean=0.4985, std=0.0000     
+Epoch[69]        loss: 0.6919    g_loss: 0.3453  d_loss: 0.3467 :  69%|▋| 69/100 [00:Epoch[70]        loss: 0.6916    g_loss: 0.3451  d_loss: 0.3464 :  69%|▋| 69/100 [00:39<00:1
+Epoch[70] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.84]%
+Test set AUPRC: [95.21%]
+[IGAN] Epoch 70: D_real mean=0.4981, std=0.0007 | D_fake mean=0.4986, std=0.0001
+Epoch[70]        loss: 0.6916    g_loss: 0.3451  d_loss: 0.3464 :  70%|▋| 70/100 [00:Epoch[71]        loss: 0.6916    g_loss: 0.3453  d_loss: 0.3462 :  70%|▋| 70/100 [00:40<00:1
+Epoch[71] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.23]%
+Test set AUPRC: [94.56%]
+[IGAN] Epoch 71: D_real mean=0.4981, std=0.0008 | D_fake mean=0.4990, std=0.0001     
+Epoch[71]        loss: 0.6916    g_loss: 0.3453  d_loss: 0.3462 :  71%|▋| 71/100 [00:Epoch[72]        loss: 0.6918    g_loss: 0.3458  d_loss: 0.3460 :  71%|▋| 71/100 [00:41<00:1
+Epoch[72] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [60.83]%
+Test set AUPRC: [75.64%]
+[IGAN] Epoch 72: D_real mean=0.4980, std=0.0009 | D_fake mean=0.4994, std=0.0000     
+Epoch[72]        loss: 0.6918    g_loss: 0.3458  d_loss: 0.3460 :  72%|▋| 72/100 [00:Epoch[73]        loss: 0.6919    g_loss: 0.3462  d_loss: 0.3458 :  72%|▋| 72/100 [00:41<00:1
+Epoch[73] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [39.72]%
+Test set AUPRC: [59.41%]
+[IGAN] Epoch 73: D_real mean=0.4978, std=0.0011 | D_fake mean=0.4998, std=0.0000     
+Epoch[73]        loss: 0.6919    g_loss: 0.3462  d_loss: 0.3458 :  73%|▋| 73/100 [00:Epoch[74]        loss: 0.6920    g_loss: 0.3466  d_loss: 0.3454 :  73%|▋| 73/100 [00:42<00:1
+Epoch[74] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [3.53]%
+Test set AUPRC: [31.08%]
+[IGAN] Epoch 74: D_real mean=0.4971, std=0.0015 | D_fake mean=0.5005, std=0.0001
+Epoch[74]        loss: 0.6920    g_loss: 0.3466  d_loss: 0.3454 :  74%|▋| 74/100 [00:Epoch[75]        loss: 0.6923    g_loss: 0.3477  d_loss: 0.3446 :  74%|▋| 74/100 [00:42<00:1
+Epoch[75] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [3.47]%
+Test set AUPRC: [31.08%]
+[IGAN] Epoch 75: D_real mean=0.4972, std=0.0021 | D_fake mean=0.5012, std=0.0004     
+Epoch[75]        loss: 0.6923    g_loss: 0.3477  d_loss: 0.3446 :  75%|▊| 75/100 [00:Epoch[76]        loss: 0.6935    g_loss: 0.3485  d_loss: 0.3449 :  75%|▊| 75/100 [00:43<00:1
+Epoch[76] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.23]%
+Test set AUPRC: [95.16%]
+[IGAN] Epoch 76: D_real mean=0.5015, std=0.0038 | D_fake mean=0.5053, std=0.0003     
+Epoch[76]        loss: 0.6935    g_loss: 0.3485  d_loss: 0.3449 :  76%|▊| 76/100 [00:Epoch[77]        loss: 0.6988    g_loss: 0.3553  d_loss: 0.3436 :  76%|▊| 76/100 [00:43<00:1
+Epoch[77] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [53.80]%
+Test set AUPRC: [67.67%]
+[IGAN] Epoch 77: D_real mean=0.5042, std=0.0066 | D_fake mean=0.5104, std=0.0002     
+Epoch[77]        loss: 0.6988    g_loss: 0.3553  d_loss: 0.3436 :  77%|▊| 77/100 [00:Epoch[78]        loss: 0.7009    g_loss: 0.3571  d_loss: 0.3439 :  77%|▊| 77/100 [00:44<00:1
+Epoch[78] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.33]%
+Test set AUPRC: [95.35%]
+[IGAN] Epoch 78: D_real mean=0.5053, std=0.0089 | D_fake mean=0.5146, std=0.0003     
+Epoch[78]        loss: 0.7009    g_loss: 0.3571  d_loss: 0.3439 :  78%|▊| 78/100 [00:Epoch[79]        loss: 0.7043    g_loss: 0.3632  d_loss: 0.3411 :  78%|▊| 78/100 [00:44<00:1
+Epoch[79] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.90]%
+Test set AUPRC: [95.92%]
+[IGAN] Epoch 79: D_real mean=0.5044, std=0.0123 | D_fake mean=0.5168, std=0.0003     
+Epoch[79]        loss: 0.7043    g_loss: 0.3632  d_loss: 0.3411 :  79%|▊| 79/100 [00:Epoch[80]        loss: 0.7037    g_loss: 0.3648  d_loss: 0.3388 :  79%|▊| 79/100 [00:45<00:1
+Epoch[80] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [3.68]%
+Test set AUPRC: [31.11%]
+[IGAN] Epoch 80: D_real mean=0.4967, std=0.0110 | D_fake mean=0.5176, std=0.0011     
+Epoch[80]        loss: 0.7037    g_loss: 0.3648  d_loss: 0.3388 :  80%|▊| 80/100 [00:Epoch[81]        loss: 0.6894    g_loss: 0.3402  d_loss: 0.3492 :  80%|▊| 80/100 [00:46<00:1
+Epoch[81] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [4.69]%
+Test set AUPRC: [31.19%]
+[IGAN] Epoch 81: D_real mean=0.4923, std=0.0068 | D_fake mean=0.4875, std=0.0008     
+Epoch[81]        loss: 0.6894    g_loss: 0.3402  d_loss: 0.3492 :  81%|▊| 81/100 [00:Epoch[82]        loss: 0.6854    g_loss: 0.3383  d_loss: 0.3470 :  81%|▊| 81/100 [00:46<00:1
+Epoch[82] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.51]%
+Test set AUPRC: [94.63%]
+[IGAN] Epoch 82: D_real mean=0.4941, std=0.0024 | D_fake mean=0.4959, std=0.0009     
+Epoch[82]        loss: 0.6854    g_loss: 0.3383  d_loss: 0.3470 :  82%|▊| 82/100 [00:Epoch[83]        loss: 0.6899    g_loss: 0.3444  d_loss: 0.3455 :  82%|▊| 82/100 [00:47<00:1
+Epoch[83] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [95.85]%
+Test set AUPRC: [94.86%]
+[IGAN] Epoch 83: D_real mean=0.4971, std=0.0019 | D_fake mean=0.4984, std=0.0005     
+Epoch[83]        loss: 0.6899    g_loss: 0.3444  d_loss: 0.3455 :  83%|▊| 83/100 [00:Epoch[84]        loss: 0.6909    g_loss: 0.3446  d_loss: 0.3463 :  83%|▊| 83/100 [00:47<00:0
+Epoch[84] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [96.33]%
+Test set AUPRC: [95.31%]
+[IGAN] Epoch 84: D_real mean=0.4973, std=0.0016 | D_fake mean=0.4978, std=0.0001     
+Epoch[84]        loss: 0.6909    g_loss: 0.3446  d_loss: 0.3463 :  84%|▊| 84/100 [00:Epoch[85]        loss: 0.6910    g_loss: 0.3447  d_loss: 0.3462 :  84%|▊| 84/100 [00:48<00:0
+Epoch[85] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [94.75]%
+Test set AUPRC: [94.53%]
+[IGAN] Epoch 85: D_real mean=0.4973, std=0.0016 | D_fake mean=0.4985, std=0.0001     
+Epoch[85]        loss: 0.6910    g_loss: 0.3447  d_loss: 0.3462 :  85%|▊| 85/100 [00:Epoch[86]        loss: 0.6915    g_loss: 0.3455  d_loss: 0.3460 :  85%|▊| 85/100 [00:49<00:0
+Epoch[86] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [85.29]%
+Test set AUPRC: [89.50%]
+[IGAN] Epoch 86: D_real mean=0.4979, std=0.0016 | D_fake mean=0.4991, std=0.0001     
+Epoch[86]        loss: 0.6915    g_loss: 0.3455  d_loss: 0.3460 :  86%|▊| 86/100 [00:Epoch[87]        loss: 0.6921    g_loss: 0.3461  d_loss: 0.3459 :  86%|▊| 86/100 [00:49<00:0
+Epoch[87] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [91.37]%
+Test set AUPRC: [92.38%]
+[IGAN] Epoch 87: D_real mean=0.4988, std=0.0019 | D_fake mean=0.4997, std=0.0001     
+Epoch[87]        loss: 0.6921    g_loss: 0.3461  d_loss: 0.3459 :  87%|▊| 87/100 [00:Epoch[88]        loss: 0.6923    g_loss: 0.3459  d_loss: 0.3464 :  87%|▊| 87/100 [00:50<00:0
+Epoch[88] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [58.74]%
+Test set AUPRC: [69.68%]
+[IGAN] Epoch 88: D_real mean=0.4990, std=0.0019 | D_fake mean=0.4993, std=0.0001     
+Epoch[88]        loss: 0.6923    g_loss: 0.3459  d_loss: 0.3464 :  88%|▉| 88/100 [00:Epoch[89]        loss: 0.6925    g_loss: 0.3453  d_loss: 0.3471 :  88%|▉| 88/100 [00:50<00:0
+Epoch[89] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [4.64]%
+Test set AUPRC: [31.16%]
+[IGAN] Epoch 89: D_real mean=0.5002, std=0.0024 | D_fake mean=0.4969, std=0.0004     
+Epoch[89]        loss: 0.6925    g_loss: 0.3453  d_loss: 0.3471 :  89%|▉| 89/100 [00:Epoch[90]        loss: 0.6908    g_loss: 0.3427  d_loss: 0.3481 :  89%|▉| 89/100 [00:51<00:0
+Epoch[90] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [5.16]%
+Test set AUPRC: [31.24%]
+[IGAN] Epoch 90: D_real mean=0.4982, std=0.0012 | D_fake mean=0.4951, std=0.0004     
+Epoch[90]        loss: 0.6908    g_loss: 0.3427  d_loss: 0.3481 :  90%|▉| 90/100 [00:Epoch[91]        loss: 0.6887    g_loss: 0.3389  d_loss: 0.3498 :  90%|▉| 90/100 [00:51<00:0
+Epoch[91] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [4.82]%
+Test set AUPRC: [31.26%]
+[IGAN] Epoch 91: D_real mean=0.4990, std=0.0012 | D_fake mean=0.4879, std=0.0028     
+Epoch[91]        loss: 0.6887    g_loss: 0.3389  d_loss: 0.3498 :  91%|▉| 91/100 [00:Epoch[92]        loss: 0.7393    g_loss: 0.4140  d_loss: 0.3253 :  91%|▉| 91/100 [00:52<00:0
+Epoch[92] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [94.25]%
+Test set AUPRC: [93.57%]
+[IGAN] Epoch 92: D_real mean=0.5051, std=0.0041 | D_fake mean=0.5791, std=0.0103     
+Epoch[92]        loss: 0.7393    g_loss: 0.4140  d_loss: 0.3253 :  92%|▉| 92/100 [00:Epoch[93]        loss: 0.7076    g_loss: 0.3672  d_loss: 0.3404 :  92%|▉| 92/100 [00:52<00:0
+Epoch[93] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [92.42]%
+Test set AUPRC: [92.13%]
+[IGAN] Epoch 93: D_real mean=0.5064, std=0.0043 | D_fake mean=0.5011, std=0.0001     
+Epoch[93]        loss: 0.7076    g_loss: 0.3672  d_loss: 0.3404 :  93%|▉| 93/100 [00:Epoch[94]        loss: 0.6965    g_loss: 0.3480  d_loss: 0.3485 :  93%|▉| 93/100 [00:53<00:0
+Epoch[94] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [85.72]%
+Test set AUPRC: [88.14%]
+[IGAN] Epoch 94: D_real mean=0.5055, std=0.0025 | D_fake mean=0.5013, std=0.0001     
+Epoch[94]        loss: 0.6965    g_loss: 0.3480  d_loss: 0.3485 :  94%|▉| 94/100 [00:Epoch[95]        loss: 0.6958    g_loss: 0.3477  d_loss: 0.3481 :  94%|▉| 94/100 [00:54<00:0
+Epoch[95] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [77.64]%
+Test set AUPRC: [82.83%]
+[IGAN] Epoch 95: D_real mean=0.5038, std=0.0019 | D_fake mean=0.5008, std=0.0001     
+Epoch[95]        loss: 0.6958    g_loss: 0.3477  d_loss: 0.3481 :  95%|▉| 95/100 [00:Epoch[96]        loss: 0.6950    g_loss: 0.3473  d_loss: 0.3477 :  95%|▉| 95/100 [00:54<00:0
+Epoch[96] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [80.66]%
+Test set AUPRC: [85.85%]
+[IGAN] Epoch 96: D_real mean=0.5028, std=0.0021 | D_fake mean=0.5007, std=0.0000     
+Epoch[96]        loss: 0.6950    g_loss: 0.3473  d_loss: 0.3477 :  96%|▉| 96/100 [00:Epoch[97]        loss: 0.6944    g_loss: 0.3472  d_loss: 0.3471 :  96%|▉| 96/100 [00:55<00:0
+Epoch[97] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [86.76]%
+Test set AUPRC: [88.56%]
+[IGAN] Epoch 97: D_real mean=0.5009, std=0.0019 | D_fake mean=0.5006, std=0.0000     
+Epoch[97]        loss: 0.6944    g_loss: 0.3472  d_loss: 0.3471 :  97%|▉| 97/100 [00:Epoch[98]        loss: 0.6940    g_loss: 0.3475  d_loss: 0.3465 :  97%|▉| 97/100 [00:55<00:0
+Epoch[98] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [69.29]%
+Test set AUPRC: [71.23%]
+[IGAN] Epoch 98: D_real mean=0.5006, std=0.0025 | D_fake mean=0.5010, std=0.0001     
+Epoch[98]        loss: 0.6940    g_loss: 0.3475  d_loss: 0.3465 :  98%|▉| 98/100 [00:Epoch[99]        loss: 0.6930    g_loss: 0.3457  d_loss: 0.3473 :  98%|▉| 98/100 [00:56<00:0
+Epoch[99] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [6.37]%
+Test set AUPRC: [31.40%]
+[IGAN] Epoch 99: D_real mean=0.5006, std=0.0014 | D_fake mean=0.4978, std=0.0001     
+Epoch[99]        loss: 0.6930    g_loss: 0.3457  d_loss: 0.3473 :  99%|▉| 99/100 [00:Epoch[100]       loss: 0.6940    g_loss: 0.3469  d_loss: 0.3471 :  99%|▉| 99/100 [00:57<00:
+Epoch[100] ################### testing ######################
+[IGAN-test] test shape: (186, 6)
+[IGAN-test] test mean: [-2.3511376e-02  7.5230174e+00 -6.6003895e-01 -1.1925199e+00  
+ -3.8756097e-03 -1.1391755e+00]
+[IGAN-test] test std: [ 0.9718112 15.291972   1.3279877  1.4862243  1.1200594  2.2386873]
+Test set AUROC: [75.37]%
+Test set AUPRC: [83.86%]
+[IGAN] Epoch 100: D_real mean=0.5017, std=0.0011 | D_fake mean=0.5015, std=0.0001
+Epoch[100]       loss: 0.6940    g_loss: 0.3469  d_loss: 0.3471 : 100%|█| 100/100 [00Epoch[100]       loss: 0.6940    g_loss: 0.3469  d_loss: 0.3471 : 100%|█| 100/100 [00:57<00
+train time: 0.95 Min
+===============================  End  ===============================
